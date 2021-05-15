@@ -1,76 +1,34 @@
-# Fitness Tracker - Yet another fitness tracker
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+# Fitness-Tracker
+# Unit 17 NoSQL Homework: Workout Tracker
 
-For this assignment, the app is a fitness tracker.  The fitness tracker allows the user to create a workout where they enter various exercises associated to the workout.  The data can then be analyzed with an included stats page that provides insights into the details of all their workouts.  In this homework assignment, the challenge is to connect the included frontend with a backend that is to be built using MongoDB, Mongoose and Express.
+For this assignment, you'll create a workout tracker. You have already been provided with the front end code in the `Develop` folder. This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
 
-## Table of Contents
-- [Fitness Tracker - Yet another fitness tracker](#fitness-tracker---yet-another-fitness-tracker)
-  - [Table of Contents](#table-of-contents)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Features](#features)
-  - [License](#license)
-  - [Contributing](#contributing)
-  - [Screenshots](#screenshots)
-  - [Questions](#questions)
+## User Story
 
-## Installation
-1. Clone this GitHub repository
+* As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
 
-   ```
-   git@github.com:harishnarain/fitness-tracker.git
-   ```
+## Business Context
 
-2. Install all dependent npm packages
+A consumer will reach their fitness goals more quickly when they track their workout progress.
 
-   ```
-   npm install --save
-   ```
-3. Create a MongoDB database
-4. If running locally update the MONGODB_URI with your connection string in a .env file
-5. If running on a server or hosting platform add the MONGODB_URI with connection string to the environment variables
-6. If needed seed the MongoDB database by running `npm run seed`
+## Acceptance Criteria
 
+When the user loads the page, they should be given the option to create a new workout or continue with their last workout.
 
-## Usage
-1. Run `npm start` to start the application
-2. Choose **Continue Workout** to continue the last workout or **New Workout** to create a new workout.
-3. At the **Add Your Exercise** page select your **Exercise Type**
-4. Enter the details of your exercise and click **Complete** to complete the workout or **Add Exercise** continue to add other exercises
-5. Click the **Dashboard** on the top navigation bar to see stats.
+The user should be able to:
 
-A demo of the application is available at: https://arcane-hollows-87215.herokuapp.com/
+  * Add exercises to the most recent workout plan.
 
-## Features
-* Add a workout
-* Add a resistance workout
-* Add a cardio workout
-* See a snapshot of the last workout
-* See stats with charts and graphs on the overall workouts
+  * Add new exercises to a new workout plan.
 
+  * View the combined weight of multiple exercises from the past seven workouts on the `stats` page.
 
-## License
-This project uses the MIT license
-## Contributing
-Pull requests are welcome
-## Screenshots
-**Home Page**
+  * View the total duration of each workout from the past seven workouts on the `stats` page.
 
-![home](https://github.com/harishnarain/fitness-tracker/blob/main/home.png?raw=true)
+> **Important:** Look into using a MongoDB aggregate function to dynamically add up and return the total duration for each workout. Check out the [MongoDB documentation on the $addFields](https://docs.mongodb.com/manual/reference/operator/aggregation/addFields/), the [MongoDB documentation on the $sum operator](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/), and the [Mongoose documentation on aggregate functions](https://mongoosejs.com/docs/api.html#aggregate_Aggregate) to learn how it can be accomplished.
 
-**New Workout**
+To deploy an application with a MongoDB database to Heroku, you'll need to set up a MongoDB Atlas account and connect a database from there to your application. Be sure to use the following guides for support:
 
-![newworkout](https://github.com/harishnarain/fitness-tracker/blob/main/new_workout.png?raw=true)
+  * [Set Up MongoDB Atlas](../04-Important/MongoAtlas-Setup.md)
 
-**Add Exercise**
-
-![addexercise](https://github.com/harishnarain/fitness-tracker/blob/main/add_exercise.png?raw=true)
-
-**Stats**
-
-![stats](https://github.com/harishnarain/fitness-tracker/blob/main/stats.png?raw=true)
-
-## Questions
-Checkout my GitHub [profile](https://github.com/harishnarain)
-
-Please feel free to email at: <harishnarain@gmail.com>
+  * [Deploy with Heroku and MongoDB Atlas](../04-Important/MongoAtlas-Deploy.md)
