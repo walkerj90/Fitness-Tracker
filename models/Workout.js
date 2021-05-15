@@ -33,3 +33,13 @@ const exerciseSchema = new Schema({
     required: isRequired("distance"),
   },
 });
+
+function isRequired(field) {
+  return function () {
+    if (field == "distance") {
+      return this.type === "cardio";
+    } else {
+      return this.type === "resistance";
+    }
+  };
+}
