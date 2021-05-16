@@ -10,6 +10,14 @@ The goal for this assignment is to create a full stack workout tracker web appli
 
 The main focus for this assignment is to practice using MongoDB and Mongoose for database management, the front-end code was provided in the homework assignment's directory for us to leverage for this assignment.
 
+## Links to Deployed application and Github Repo
+
+- Link to GitHub Repo - [Workout Tracker Repo on GitHub](https://github.com/walkerj90/Fitness-Tracker)
+
+- Link to deployed application - [Workout Tracker App deployed on Heroku](https://whispering-shelf-25680.herokuapp.com/stats)
+
+---
+
 ## User Story
 
 * As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
