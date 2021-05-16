@@ -4,6 +4,8 @@
 ![npm](https://img.shields.io/npm/v/express?color=green&label=express&logo=NPM&style=plastic)
 ![npm](https://img.shields.io/npm/v/mongoose?color=orange&label=mongoose&logo=NPM&style=plastic)
 
+![workout-tracker](https://user-images.githubusercontent.com/72112742/118412806-e1640700-b650-11eb-97e4-2a983f2f7bed.gif)
+
 ## Description
 
 The goal for this assignment is to create a full stack workout tracker web application that will allow a user to keep track of their workout regime by using MongoDB and Mongoose schema for database creation/management and Express for handling routes.
